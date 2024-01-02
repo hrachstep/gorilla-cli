@@ -2,7 +2,8 @@ version: '3'
 
 services:
   gorilla-cli:
-    build: .
+    image: gorilla-cli-image:latest
+    container_name: gorilla-cli-container
     volumes:
       - .:/usr/src/app
     command: tail -f /dev/null
